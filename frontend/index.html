@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html ng-app="gather">
+
+	<head>
+		<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,width=device-width">
+		<link rel="stylesheet" href="resources/css/angular-material.min.css"></link>
+		<link rel="stylesheet" href="resources/css/font-awesome/css/font-awesome.min.css"></link>
+		<style>
+			[ng-cloak] {
+				visibility : hidden !important;
+			}
+		</style>
+	</head>
+
+
+	<body ng-controller="mainController">
+		<md-toolbar layout="row" layout-align="start center">
+				<a ng-href="/#/" style="margin:0px 14px 0px 14px; min-width:88px; text-align:center;"><i class="fa fa-home fa-2x"></i></a>
+				<span flex></span>
+				<md-button ng-href="#gatherings">Gatherings</md-button>
+				<md-button ng-href="#teams">Teams</md-button>
+				<span flex></span>
+				<md-button ng-href="#login">Login</md-button>
+		</md-toolbar>
+
+		<ng-view></ng-view>
+		<script src="resources/generated/bundle.js"></script>
+	</body>
+
+
+</html>

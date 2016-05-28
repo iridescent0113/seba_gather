@@ -1,0 +1,18 @@
+<form name="credentialsForm">
+	<md-content layout-padding>
+		<div layout="column">
+			<md-input-container>
+				<label>Username</label>
+				<input ng-model="credentials.username"></input>
+			</md-input-container>
+
+			<md-input-container>
+				<label>Password</label>
+				<input ng-model="credentials.password"></input>
+			</md-input-container>
+
+			<md-button ng-click="login()">Login</md-button>
+		</div>
+	</md-content>
+</form>
+<h1>{{ test }}</h1>

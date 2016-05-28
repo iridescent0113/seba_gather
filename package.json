@@ -1,0 +1,31 @@
+{
+  "name": "gather!",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -v -t browserify-css frontend/index.js -o frontend/resources/generated/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-material": "^1.0.8",
+    "angular-messages": "^1.5.5",
+    "angular-mocks": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "font-awesome": "^4.6.3",
+    "jwt-simple": "^0.5.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0"
+  },
+  "devDependencies": {
+    "browserify-css": "^0.9.1"
+  }
+}
