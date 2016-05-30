@@ -14,14 +14,32 @@
 	</head>
 
 
-	<body ng-controller="mainController">
+	<body ng-controller="mainController" ng-cloak>
 		<md-toolbar layout="row" layout-align="start center">
-				<a ng-href="/#/" style="margin:0px 14px 0px 14px; min-width:88px; text-align:center;"><i class="fa fa-home fa-2x"></i></a>
+<!--				<a ng-href="/#/" style="margin:0px 14px 0px 14px; min-width:88px; text-align:center;">
+					<i class="fa fa-home fa-2x"></i>
+				</a>
+-->
+				<md-button ng-href="/#/" class="md-icon-button">
+					<md-icon class="fa fa-home fa-2x"></md-icon>
+				</md-button>
 				<span flex></span>
-				<md-button ng-href="#gatherings">Gatherings</md-button>
-				<md-button ng-href="#teams">Teams</md-button>
-				<span flex></span>
-				<md-button ng-href="#login">Login</md-button>
+				<md-menu>
+					<md-button class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
+						<i class="fa fa-bars"></i>
+					</md-button>
+					<md-menu-content width="4">
+						<md-menu-item>
+							<md-button ng-href="#gatherings">Gatherings</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button ng-href="#teams">Teams</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button ng-href="#login">Login</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
 		</md-toolbar>
 
 		<ng-view></ng-view>

@@ -28,8 +28,12 @@ angular.module('gather', ['ngAria', 'ngAnimate', 'ngRoute', 'ngMaterial'])
 				controller : 'teamsController'
 			})
 			.when('/login', {
-				templateUrl : './views/login/login.html',
+				templateUrl : './views/users/login/login.html',
 				controller : 'loginController'
+			})
+			.when('/register', {
+				templateUrl : './views/users/register/register.html',
+				controller : 'registerController'
 			})
 	}])
 	.config(['$httpProvider', function($httpProvider) {

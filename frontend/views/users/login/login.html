@@ -3,16 +3,17 @@
 		<div layout="column">
 			<md-input-container>
 				<label>Username</label>
-				<input ng-model="credentials.username"></input>
+				<input type="text" ng-model="credentials.username"></input>
 			</md-input-container>
 
 			<md-input-container>
 				<label>Password</label>
-				<input ng-model="credentials.password"></input>
+				<input type="password" ng-model="credentials.password"></input>
 			</md-input-container>
 
 			<md-button ng-click="login()">Login</md-button>
 		</div>
 	</md-content>
 </form>
+<span>Not yet registered? <a ng-href="/#/register">Create new account</a></span>
 <h1>{{ test }}</h1>
