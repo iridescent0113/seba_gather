@@ -15,7 +15,7 @@
 
 
 	<body ng-controller="mainController" ng-cloak>
-		<md-toolbar layout="row" layout-align="start center">
+		<md-toolbar layout="row" layout-align="center center">
 <!--				<a ng-href="/#/" style="margin:0px 14px 0px 14px; min-width:88px; text-align:center;">
 					<i class="fa fa-home fa-2x"></i>
 				</a>
@@ -24,7 +24,13 @@
 					<md-icon class="fa fa-home fa-2x"></md-icon>
 				</md-button>
 				<span flex></span>
-				<md-menu>
+				<div hide show-gt-xs layout="row" layout-align="center center" flex="55">
+					<md-button ng-href="#gatherings">Gatherings</md-button>
+					<md-button ng-href="#teams">Teams</md-button>
+					<span flex></span>
+					<md-button ng-href="#login">Login</md-button>
+				</div>
+				<md-menu hide-gt-xs flex="none">
 					<md-button class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
 						<i class="fa fa-bars"></i>
 					</md-button>
